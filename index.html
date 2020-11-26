@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>formulario</title>
+</head>
+<body>
+    <form class="blink">
+        <!--REQUISITOS PRINCIPAL-->
+        <fieldset>
+            <legend>Conta</legend>
+                <div><!--Nome Completo-->
+                    <label>Nome: </label>
+                    <input type="text" name="name" placeholder="Seu Nome Completo" required />
+                </div>
+                <div><!--Endereço de e-mail-->
+                    <label>Email: </label>
+                    <input type="email" name="email" placeholder="Seu Email" required />
+                </div>
+        </fieldset>
+
+        <!--REQUISITOS SECUNDÁRIOS-->
+
+        <fieldset>
+            <legend>Informações</legend>
+                <div><!--Idade-->
+                    <label>Idade: </label>
+                    <input type="number" name="idade" placeholder="Sua Idade" required />
+                </div>
+                <div><!--Endereço/Moradia-->
+                    <label>Endereço: </label>
+                    <input type="text" name="text" placeholder="Seu Endereço" required />
+                </div>
+                <div><!--Sua Cidade-->
+                    <label>Cidade: </label>
+                        <select>
+                            <option value="AM">Amazonas</option>
+                            <option value="SC" >Santa Catarina</option>
+                            <option value="SP" >Sao Paulo</option>
+                            <option value="RJ" >Rio de Janeiro</option>
+                            <option value="TO" >Tocantins</option>
+                            <option value="BA" >Bahia</option>
+                            <option value="GO" >Goias</option>
+                        </select>
+                </div>
+                <div><!--Telefone-->
+                    <label>Telefone: </label>
+                    <input type="text" name="text" placeholder="(99) 99999-9999" required />
+                </div>
+                <div><!--Gênero Sexual-->
+                    <label>Gênero: </label>
+                        <input type="radio" name="gender" value="Masculino" checked />
+                        <label>Masculino</label>
+                        <input type="radio" name="gender" value="Masculino"  />
+                        <label>Feminino</label>
+                </div>
+        </fieldset>
+
+        <!--REQUISITOS OPCIONAIS-->
+
+        <fieldset>
+            <legend>Opcional</legend>
+                <div>
+                    <label style="font-size: 23px;">Oque acha da nossa empresa?</label> <!-- <=nunca estilizar dentro do html '-' -->
+                    <textarea style="width: 100%; height: 200px;" placeholder="Conte-nos sua experiência com nossa empresa apenas de ser apesar um doido sentado digitando isso '-'" ></textarea>  <!-- <=nunca estilizar dentro do html '-' -->
+                </div>
+                <div>
+                    <label>Deseja receber promoções via e-mail?</label>
+                    <input type="checkbox" />
+                </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>
