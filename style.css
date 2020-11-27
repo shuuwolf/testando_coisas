@@ -59,3 +59,26 @@ body label{
     -o-animation: blink 5.0s linear infinite;
     animation: blink 5.0s linear infinite;
 }
+
+.buttom_enviar{
+    background-color: rgb(245, 145, 245);
+    border:1px solid purple;
+    box-shadow: 3px 3px 3px black;
+    height: 35px;
+    width: 100px;
+    margin-top:10px;
+}
+
+.buttom_enviar:hover{
+    cursor:pointer;
+    background-color: rgb(240, 159, 240);
+    border:1px solid rgb(201, 4, 201);
+    box-shadow: 5px 5px 5px black;
+    height: 35px;
+    width: 98px;
+    margin-top:10px;
+}
+
+#center{
+    text-align:center;
+}
